@@ -1,0 +1,43 @@
+{
+  "name": "@smithjke/boilerplate-schema",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "dist/**/!(*.tsbuildinfo)"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up:major": "yarn version --major && git push && git push --tags",
+    "up:minor": "yarn version --minor && git push && git push --tags",
+    "up:patch": "yarn version --patch && git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithjke/boilerplate-schema.git"
+  },
+  "author": "smithjke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smithjke/boilerplate-schema/issues"
+  },
+  "homepage": "https://github.com/smithjke/boilerplate-schema#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.24.44",
+    "@smithjke/2p-core": "^1.0.4"
+  }
+}

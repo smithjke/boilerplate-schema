@@ -1,1 +1,1 @@
-# boilerplate-schema
+# @smithjke/boilerplate-schema
