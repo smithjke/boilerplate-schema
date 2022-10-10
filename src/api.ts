@@ -1,10 +1,12 @@
 import { createApi } from '@smithjke/2p-core/api';
 import * as Auth from './auth';
+import * as Page from './page';
 import * as Session from './session';
 import * as User from './user';
 
 export const publicAPI = createApi({
   auth: new Auth.ClientService('/auth'),
+  page: new Page.ClientService('/page'),
 });
 
 export const API = createApi({
