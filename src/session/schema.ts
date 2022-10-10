@@ -8,7 +8,7 @@ export const entity = Type.Object({
   accessTokenExpiredAt: Type.Integer(),
   refreshToken: Type.String(),
   refreshTokenExpiredAt: Type.Integer(),
-  userId: Type.Integer(),
+  userId: Type.String(),
   createdAt: Type.Integer(),
   updatedAt: Type.Integer(),
 });
