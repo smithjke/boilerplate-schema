@@ -49,6 +49,7 @@ export enum EntityOrderField {
 
 export const entityOrderField = Type.Enum(EntityOrderField);
 
+export type Entity = Static<typeof entity>;
 export type SingleEntity = Static<typeof singleEntity>;
 export type ListedEntity = Static<typeof listedEntity>;
 export type CreateEntity = Static<typeof createEntity>;
