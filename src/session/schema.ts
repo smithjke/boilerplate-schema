@@ -41,7 +41,11 @@ export const updateEntity = Type.Partial(createEntity);
 
 export const entityKey = Type.Pick(entity, ['id']);
 
-export const entityFilter = Type.Object({});
+export const entityFilter = Type.Pick(entity, [
+  'accessToken',
+  'refreshToken',
+  'userId',
+]);
 
 export enum EntityOrderField {
   ID = 'id',
