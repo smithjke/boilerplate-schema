@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "@sinclair/typebox": "^0.24.44",
-    "@smithjke/2p-core": "^1.0.4"
+    "@smithjke/2p-core": "^1.0.5"
   }
 }
